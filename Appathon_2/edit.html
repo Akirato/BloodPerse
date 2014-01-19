@@ -1,0 +1,209 @@
+<html>
+<head>
+</head>
+<style>
+div.show 
+{
+background:#96CDCD;
+border:2px solid #ffc;
+border-radius:15px;
+margin:0 0 5px 0;
+float:left;
+width:100%;
+padding:6px 0;
+}
+div.image
+{
+border:2px solid #ffc;
+border-radius:15px;
+margin:0 0 5px 0;
+float:left;
+width:100%;
+padding:6px 0;
+}
+input
+{
+	width:90%;
+}
+select
+{
+	width:90%;
+}
+a 
+{
+	display:block;
+	width:330px fixed;
+	font-size:100%;
+	font-family:"helvetica"; 
+	background-color:#000000;
+	text-align:center;
+	padding:4px;
+	text-decoration:none;
+	text-transform:uppercase;
+	opacity:0.6;
+}
+table
+{
+
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	opacity:1;
+}
+ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+}
+li
+{
+display:inline;
+}
+#navi
+{
+position:absolute;
+left:20px;
+margin-left: auto;
+margin-right: auto;
+width: 15%;
+height: auto;
+background: #C8C8C8;
+}
+#head
+{
+position:absolute;
+border-radius:15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    background: #FF0430;
+
+}
+div.row 
+{
+background:#539DC2;
+border:2px solid #539DC2;
+border-radius:15px;
+margin:0 0 5px 0;
+float:left;
+width:100%;
+padding:6px 0;
+}
+#change{
+  position:absolute;
+  top:150px;
+  width:100%;
+  margin: auto;
+  
+  border: 0px solid #666;
+  background: #ffffff;
+}
+body
+{
+font-family:"helvetica";
+}
+
+</style>
+<body>
+<div class="image" align="center">
+<div id="head"><h2><center><font color="white">Edit Your Details</font></center></h2></div></div><br><br><br><br><br><br>
+
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td><a href="notification.html">Notifications</a></td>
+<td><a href="edit.html">Edit Profile</a></td>
+
+</tr>
+</div>
+<div id="change" align="center">
+<form method="post" name="Register">
+<font color="white">
+<div class="row requiredRow">
+	<label for="txt_FullName" id="FullName-ariaLabel">Full Name:</label><br>
+	<input id="txt_FullName" name="txt_FullName" type="text" aria-labelledby="FullName-ariaLabel" value="You cannot change your Fullname" disabled="disabled">
+</p>
+</div>
+<div class="row requiredRow" align="center">
+	<label for="txt_ChangeUsername" id="ChangeUsername-ariaLabel">Change Username:</label><br>
+	<input id="txt_ChangeUsername" name="txt_ChangeUsername" type="text" aria-labelledby="ChangeUsername-ariaLabel">
+</p></div>
+<div class="row requiredRow" align="center">
+	<label for="txt_ChangeEmailid" id="ChangeEmailid-ariaLabel">Change Email id:</label><br>
+	<input id="txt_ChangeEmailid" name="txt_ChangeEmailid" type="text" aria-labelledby="ChangeEmailid-ariaLabel">
+</p></div>
+<div class="row requiredRow" align="center">
+		<label for="txt_ChangeLocation" id="ChangeLocation-ariaLabel">Change Location:</label><br>
+	<input id="txt_ChangeLocation" name="txt_ChangeLocation" type="text" aria-labelledby="ChangeLocation-ariaLabel">
+</p></div>
+<div class="row requiredRow" align="center">
+	<label for="pwd_EnterExistingPassword" id="EnterExistingPassword-ariaLabel">Enter Existing Password:</label><br>
+	<input id="pwd_EnterExistingPassword" name="pwd_EnterExistingPassword" type="password" aria-labelledby="EnterExistingPassword-ariaLabel" class="required" title="Enter Existing Password:. This is a required field">
+</p></div>
+<div class="row requiredRow" align="center">
+	<label for="pwd_EnterNewPasswordifchangerequired" id="EnterNewPasswordifchangerequired-ariaLabel">Enter New Password(if change required):</label><br>
+	<input id="pwd_EnterNewPasswordifchangerequired" name="pwd_EnterNewPasswordifchangerequired" type="password" aria-labelledby="EnterNewPasswordifchangerequired-ariaLabel">
+</p></div>
+<div class="row requiredRow" align="center">
+	<label for="txt_ChangePinCode" id="ChangePinCode-ariaLabel">Change Pin Code:</label><br>
+	<input id="txt_ChangePinCode" name="txt_ChangePinCode" type="text" aria-labelledby="ChangePinCode-ariaLabel">
+</p></div>
+<div class="row requiredRow" align="center">
+	<label for="sel_ChangeGender" id="ChangeGender-ariaLabel">Change Gender:</label><br>
+	<select id="sel_ChangeGender" name="sel_ChangeGender" aria-labelledby="ChangeGender-ariaLabel">
+		<option value="Male">Male</option>
+		<option value="Female">Female</option>
+	</select>
+</p></div>
+<div class="row requiredRow" align="center">
+	<label for="ChangeDateOfBirth" id="ChangeDateOfBirth-ariaLabel">Change Date Of Birth:</label><br>
+	<input id="ChangeDateOfBirth" name="ChangeDateOfBirth" type="date" aria-labelledby="ChangeDateOfBirth-ariaLabel">
+</p></div>
+<div class="row requiredRow" align="center">
+		<label for="ChangeEmailId" id="ChangeEmailId-ariaLabel">Change Email Id:</label><br>
+	<input id="ChangeEmailId" name="ChangeEmailId" type="email" aria-labelledby="ChangeEmailId-ariaLabel">
+</p></div>
+<div class="row requiredRow" align="center">
+	<label for="sel_ChangeCountry" id="ChangeCountry-ariaLabel">Change Country:</label><br>
+	<select id="sel_ChangeCountry" name="sel_ChangeCountry" aria-labelledby="ChangeCountry-ariaLabel">
+		<option value="India ">India </option>
+		<option value="Pakistan">Pakistan</option>
+		<option value="Japan">Japan</option>
+		<option value="United States Of America">United States Of America</option>
+		<option value="United Kingdom">United Kingdom</option>
+		<option value="Nepal">Nepal</option>
+		<option value="Russia ">Russia </option>
+		<option value="Australia">Australia</option>
+		<option value="France">France</option>
+		<option value="Others">Others</option>
+	</select>
+</p></div>
+<div class="row requiredRow" align="center">
+	<label for="sel_BloodGroup" id="BloodGroup-ariaLabel">Blood Group:</label><br>
+	<select id="sel_BloodGroup" name="sel_BloodGroup" aria-labelledby="BloodGroup-ariaLabel" value="You cannot change your Fullname" disabled="disabled" >
+		<option value="A+">A+</option>
+		<option value="A-">A-</option>
+		<option value="B+">B+</option>
+		<option value="B-">B-</option>
+		<option value="O+">O+</option>
+		<option value="O-">O-</option>
+		<option value="AB+">AB+</option>
+		<option value="AB-">AB-</option>
+	</select>
+</p></div>
+<div class="row requiredRow" align="center">
+	<fieldset>
+		<legend>Update Medical Status:</legend>
+		<span><input value="Fit for Blood Transfusion" id="rad_UpdateMedicalStatus_1" name="rad_UpdateMedicalStatus" type="radio" aria-labelledby="UpdateMedicalStatus-ariaLabel"> <label for="rad_UpdateMedicalStatus_1" id="UpdateMedicalStatus-ariaLabel">Fit for Blood Transfusion</label></span>
+ 		<span><input value="Suffering from chronic diseases" id="rad_UpdateMedicalStatus_2" name="rad_UpdateMedicalStatus" type="radio" aria-labelledby="UpdateMedicalStatus-ariaLabel"> <label for="rad_UpdateMedicalStatus_2" id="UpdateMedicalStatus-ariaLabel">Suffering from chronic diseases</label></span>
+ 	</fieldset>
+</p></div>
+<div class="row" align="center">
+<input type="submit" value="Submit">
+</p></div>
+</div>
+</font>
+</form>
+</body>
+</html>

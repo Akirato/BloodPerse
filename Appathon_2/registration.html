@@ -1,0 +1,142 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<script src="jquery.js">
+</script>
+<script>
+$(document).ready(function(){
+$('form').submit(function () {
+	var nam=$('#txt_FullName').val();
+	var username=$('#txt_Username').val();
+	var gender=$('#sel_Gender').val();
+	var dob=$('#DateofBirth').val();
+	var cno=$('#Contactno').val();
+	var id=$('#EmailId').val();
+	var city=$('#txt_Location').val();
+	var pin=$('#txt_PinCode').val();
+	
+	$('.new').append('<li><p>Name:' + nam + '</p></li>');
+	$('.new').append('<li><p>User Name:' + username + '</p></li>');
+	$('.new').append('<li><p>Gender:' + gender + '</p></li>');
+	$('.new').append('<li><p>Date Of Birth:' + dob + '</p></li>');
+	$('.new').append('<li><p>Contact No:' + cno + '</p></li>');
+	$('.new').append('<li><p>Email-ID:' + id + '</p></li>');
+	$('.new').append('<li><p>Location:' + city + '</p></li>');
+	$('.new').append('<li><p>PIN Code:' + pin + '</p></li>');
+	$('.row').hide(1000);
+	return false;	
+});
+
+    
+});
+
+
+</script>
+
+<body>
+<div class="image">
+<div id="head"><h2><center><font color="white">Register to Blood Perse</font></center></h2></div></div><br><br><br><br><br><br>
+
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td><a href="registration.html">Registrations</a></td>
+<td><a href="notification.html">Notifications</a></td>
+<td><a href="edit.html">Edit Profile</a></td>
+
+</tr>
+</div>
+<div id="change">
+<form method="post" name="Register">
+<font color="white">
+<div class="row">
+	<p align="center"><label for="txt_FullName" id="FullName-ariaLabel">Full Name</label><br>
+	<input id="txt_FullName" name="txt_FullName" type="text" aria-labelledby="FullName-ariaLabel" class="required" title="Full Name:. REGISTER to Blood Perse">
+</p>
+</div>
+<div class="row">
+	<p align="center"><label for="txt_Username" id="Username-ariaLabel">Username</label><br>
+	<input id="txt_Username" name="txt_Username" type="text" aria-labelledby="Username-ariaLabel" class="required" title="Username:. REGISTER to Blood Perse">
+</p></div>
+<div class="row">
+	<p align="center"><label for="pwd_Password" id="Password-ariaLabel">Password</label><br>
+	<input id="pwd_Password" name="pwd_Password" type="password" aria-labelledby="Password-ariaLabel" class="required" title="Password:. REGISTER to Blood Perse">
+</p></div>
+<div class="row">
+	<p align="center"><label for="pwd_Re-enterPassword" id="Re-enterPassword-ariaLabel">Re-enter Password</label><br>
+	<input id="pwd_Re-enterPassword" name="pwd_Re-enterPassword" type="password" aria-labelledby="Re-enterPassword-ariaLabel" class="required" title="Re-enter Password:. REGISTER to Blood Perse">
+</p></div>
+<div class="row">
+	<p align="center"><label for="sel_Gender" id="Gender-ariaLabel">Gender</label><br>
+	<select id="sel_Gender" name="sel_Gender" aria-labelledby="Gender-ariaLabel" class="required" title="Gender:. REGISTER to Blood Perse">
+		<option value="Male">Male</option>
+		<option value="Female">Female</option>
+	</select>
+</p></div>
+<div class="row">
+	<p align="center"><label for="DateofBirth" id="DateofBirth-ariaLabel">Date of Birth</label><br>
+	<input id="DateofBirth" name="DateofBirth" type="date" aria-labelledby="DateofBirth-ariaLabel" class="required" title="Gender:. REGISTER to Blood Perse">
+</p></div>
+<div class="row">
+	<p align="center"><label for="Contactno" id="Contactno-ariaLabel">Contact no</label><br>
+	<input id="Contactno" name="Contactno" type="number" aria-labelledby="Contactno-ariaLabel" class="required" title="Gender:. REGISTER to Blood Perse">
+</p></div>
+<div class="row">
+	<p align="center"><label for="EmailId" id="EmailId-ariaLabel">Email Id</label><br>
+	<input id="EmailId" name="EmailId" type="email" aria-labelledby="EmailId-ariaLabel" class="required" title="Gender:. REGISTER to Blood Perse">
+</p></div>
+<div class="row">
+	<p align="center"><label for="txt_Location" id="Location-ariaLabel">Location</label><br>
+	<input id="txt_Location" name="txt_Location" type="text" aria-labelledby="Location-ariaLabel" class="required" title="Location:. REGISTER to Blood Perse">
+</p></div>
+<div class="row">
+	<p align="center"><label for="txt_PinCode" id="PinCode-ariaLabel">Pin Code</label><br>
+	<input id="txt_PinCode" name="txt_PinCode" type="number" aria-labelledby="PinCode-ariaLabel" class="required" title="Pin Code:. REGISTER to Blood Perse">
+</p></div>
+<div class="row">
+	<p align="center"><label for="sel_Country" id="Country-ariaLabel">Country</label><br>
+	<select id="sel_Country" name="sel_Country" aria-labelledby="Country-ariaLabel" class="required" title="Country:. REGISTER to Blood Perse">
+		<option value="India">India</option>
+		<option value="Pakistan">Pakistan</option>
+		<option value="Japan">Japan</option>
+		<option value="United States of America">United States of America</option>
+		<option value="United Kingdom">United Kingdom</option>
+		<option value="Nepal">Nepal</option>
+		<option value="Russia">Russia</option>
+		<option value="Australia">Australia</option>
+		<option value="France">France</option>
+		<option value="Others">Others</option>
+	</select>
+</p></div>
+<div class="row">
+	<p align="center"><label for="sel_BloodGroup" id="BloodGroup-ariaLabel">Blood Group</label>
+	<select id="sel_BloodGroup" name="sel_BloodGroup" aria-labelledby="BloodGroup-ariaLabel" class="required" title="Blood Group:. REGISTER to Blood Perse">
+		<option value="A+">A+</option>
+		<option value="A-">A-</option>
+		<option value="B+">B+</option>
+		<option value="B-">B-</option>
+		<option value="O+">O+</option>
+		<option value="O-">O-</option>
+		<option value="AB+">AB+</option>
+		<option value="AB-">AB-</option>
+		<option value=""></option>
+	</select>
+</p></div>
+<div class="row">
+	<p align="center"><fieldset class="field">
+		<legend>Medical Status</legend>
+		<span><input value="Fit for Blood Tranfusion" id="rad_MedicalStatus_1" name="rad_MedicalStatus" type="radio" aria-labelledby="MedicalStatus-ariaLabel" class="required" title="Fit for Blood Tranfusion. REGISTER to Blood Perse"> <label for="rad_MedicalStatus_1" id="MedicalStatus-ariaLabel">Fit for Blood Tranfusion</label></span>
+ 		<span><input value="Suffering from chronic diseases" id="rad_MedicalStatus_2" name="rad_MedicalStatus" type="radio" aria-labelledby="MedicalStatus-ariaLabel" class="required" title="Suffering from chronic diseases. REGISTER to Blood Perse"> <label for="rad_MedicalStatus_2" id="MedicalStatus-ariaLabel">Suffering from chronic diseases</label></span>
+ 	</fieldset>
+</p></div>
+<div class="row">
+<input type="submit" value="Submit">
+</p></div>
+<div class="new"></div>
+</div>
+</font>
+<a>Already have an account?<a href="login.html">Login</a>
+</form>
+
+</body>
+</html>
